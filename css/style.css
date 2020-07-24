@@ -1,0 +1,101 @@
+body{
+    font-family: crimson pro, serif;
+    background-color: silver;
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 5% 1fr 5%;
+    gap: 8px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    border:solid 1px black;
+    padding: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none ;
+    margin-right: 30px;
+    background-color: mediumorchid;
+    color: black;
+    padding: 1px 20px 2px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.active{
+    background-color: rgb(182, 147, 31);
+}
+main{
+    grid-area: main;
+}
+
+main #sec_quien_soy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+main #sec_quien_soy article{
+    border: solid 1px;
+    
+
+}
+
+
+main #se_quien_soy #foto_quien_soy{
+    text-align: center;
+
+}
+
+main #se_quien_soy #art_quien_soy{
+    text-align: center;
+}
+
+main #se_quien_soy #art_quien_soy{
+    padding: 5px;
+}
+
+main #se_quien_soy #art_quien_soy div hr{
+    width: 30%;
+    float: left;
+    margin: auto;
+}
+
+main #se_quien_soy #art_quien_soy h3{
+    margin: auto;
+}
+
+main #se_quien_soy #art_quien_soy p{
+    text-align: justify;
+}
+
+main #a_que_me_dedico{
+    background-color: rgb(59, 159, 167);
+    color: cornsilk;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    grid-area: footer;
+}
