@@ -1,6 +1,6 @@
 body{
     font-family: crimson pro, serif;
-    background-color: silver;
+    background-color: rgb(235, 238, 234);
     display: grid;
     grid-template-areas: "header"
                          "nav"
@@ -27,7 +27,7 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    border:solid 1px black;
+    
     padding: 10px;
     
 }
@@ -45,6 +45,10 @@ nav ul li a{
 .active{
     background-color: rgb(182, 147, 31);
 }
+
+.mi_border{
+    border:solid 1px;
+}
 main{
     grid-area: main;
 }
@@ -56,7 +60,8 @@ main #sec_quien_soy{
 }
 
 main #sec_quien_soy article{
-    border: solid 1px;
+    
+    padding: 2%;
     
 
 }
@@ -71,9 +76,9 @@ main #se_quien_soy #art_quien_soy{
     text-align: center;
 }
 
-main #se_quien_soy #art_quien_soy{
+/* main #se_quien_soy #art_quien_soy{
     padding: 5px;
-}
+} */
 
 main #se_quien_soy #art_quien_soy div hr{
     width: 30%;
@@ -90,11 +95,116 @@ main #se_quien_soy #art_quien_soy p{
 }
 
 main #a_que_me_dedico{
-    background-color: rgb(59, 159, 167);
-    color: cornsilk;
+    background-color: #7fa7dc;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 2% 5% 2% 5%;
+
 }
+
+main #a_que_me_dedico h3{
+    margin-bottom: 3px;
+}
+main #a_que_me_dedico{
+    width: 15%;
+    margin: auto;
+
+}
+main #servicios  .serv_cont_titulo{
+    display: flex;
+    justify-content: center;
+
+}
+
+main #servicios  .serv_cont_cuadros{
+    display: flex;
+    justify-content: space-around
+
+
+}
+
+main #servicios  .serv_cont_cuadros article{
+    width: 30%;
+    margin: 2% ;
+    border:solid 3px #7fa7dc;
+    color: white;
+    background-color: #ee9d1f;
+    padding: 1%;
+    display: grid;
+    grid-template-rows: 5% 1fr 15%;
+
+
+}
+
+main #servicios  .serv_cont_cuadros article h4{
+    margin: auto;
+}
+
+main #servicios  .serv_cont_cuadros article .serv_mi_boton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main #servicios  .serv_cont_cuadros article p{
+    text-align: justify;
+}
+
+
+
+main #servicios  .serv_cont_cuadros article .serv_mi_boton{
+    text-decoration: none;
+    background-color: white;
+    color: #ee9d1f;
+    padding: 4px;
+    border:solid 2px black;
+    text-transform: uppercase;
+    align-self:center ;
+    box-shadow: 2px 2px 2px 2px red;
+    
+
+}
+
+main #servicios  .serv_cont_cuadros article .serv_mi_boton:hover{
+
+
+}
+
+main #herramientas{
+    background-color: thistle;
+    text-align: center;
+    display: flex ;
+    flex-direction: column;
+    padding: 1% 1% 5% 1%;
+
+}
+main #herramientas h3{
+    text-align: center;
+    color: white;
+}
+
+main #herramientas #tbl_herramientas{
+    width: 60%;
+    align-self: center;
+}
+main #herramientas #tbl_herramientas  tr td, th{
+    border:solid 1px;
+}
+
+main #herramientas #tbl_herramientas  tr td, #herrmt_img_photoshop{
+  
+    max-width: 40%;
+
+}
+
+main #herramientas #tbl_herramientas  tr td, #herrmt_img_ilustrator{
+    max-width: 50%;
+
+}
+
+
+
+
+
 
 footer{
     grid-area: footer;
